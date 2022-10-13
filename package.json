@@ -1,0 +1,36 @@
+{
+  "name": "aws-nodejs-typescript",
+  "version": "0.0.0",
+  "description": "Basic Typescript Serverless template",
+  "main": "handler.js",
+  "author": "Guilherme Barroso",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sls offline --stage dev",
+    "prod": "sls offline --stage prod",
+    "deploy:production": "sls deploy --stage prod"
+  },
+  "dependencies": {
+    "@types/lambda-log": "^2.2.0",
+    "aws-lambda": "^0.1.2",
+    "aws-sdk": "^2.859.0",
+    "json-schema-to-ts": "^2.1.1",
+    "lambda": "^0.10.3",
+    "log": "^6.0.0",
+    "source-map-support": "^0.5.10",
+    "upgrade": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.72",
+    "@types/node": "^10.17.55",
+    "esbuild": "^0.14.36",
+    "eslint": "^6.6.0",
+    "serverless-esbuild": "^1.26.2",
+    "serverless-offline": "^8.5.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^4.6.3",
+    "webpack": "^4.46.0"
+  }
+}
